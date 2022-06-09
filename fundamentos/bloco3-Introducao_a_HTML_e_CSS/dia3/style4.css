@@ -1,0 +1,48 @@
+div:hover {
+    border: 5px solid black;
+}
+
+#primaria {
+    background-color: #e5989b;
+}
+
+#secundaria {
+    background-color: #b5838d;
+}
+
+#complementar {
+    background-color: #ffb4a2;
+    height: 40px;
+}
+
+#escura {
+    background-color: #6d6875;
+}
+
+#clara {
+    background-color: #ffcdb2;
+}
+
+#primaria h3 {
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+}
+
+#secundaria h3 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+#complementar h3 {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+}
+
+#escura h3 {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+#clara h3 {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   font-style: italic;
+}
+
