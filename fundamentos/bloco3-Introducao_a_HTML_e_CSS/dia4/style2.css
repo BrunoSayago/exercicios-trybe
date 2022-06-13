@@ -1,0 +1,128 @@
+body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: medium;
+    background-color: #52796f;
+}
+
+header {
+    background-color: #84A98C;
+    border-radius: 10px;
+    padding: 10px 2em;
+    color: #2f3e46;
+    margin-bottom: 1em;
+    border-color: #2f3e46;
+    border: 5px solid;
+}
+
+nav {
+    background-color: #2f3e46;
+    border-radius: 8px;
+    padding: 10px 2em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.linknav {
+    display: inline-block;
+    width: 32%;
+    background-color: #84A98C;
+    border-radius: 5px;
+    padding: 1em 0;
+    color: #2f3e46;
+    text-decoration: none;
+}
+
+.linknav:hover {
+    background-color: #2f3e46;
+    border: 2px solid;
+    border-color: #84A98C;
+    color: #84A98C;
+    font-weight: bold;
+}
+
+article {
+    display: inline-block;
+    background-color: #2f3e46;
+    border-radius: 5px;
+    padding-left: 2em;
+    padding-right: 2em;
+    border: 5px solid;
+    border-color: #84A98C;
+    width: 70%;
+}
+ article h2 {
+    color: #84A98C;
+ }
+
+ .factsection {
+    border: 5px solid;
+    border-color: #84A98C;
+    border-radius: 5px;
+    margin-bottom: 1em;
+    background-color: #84A98C;
+    padding: 0 1em;
+    color: #2f3e46;
+    padding-bottom: 1em;
+ }
+
+ .factsection h3 {
+    font-weight: bold;
+    text-decoration: underline;
+    margin-top: 0.5em;
+    margin-bottom: 0em;
+ }
+
+ .conteudo {
+    display: inline-block;
+    vertical-align: middle;
+ }
+ 
+ .imagem {
+    width: 20%;
+    border: 2px solid;
+    border-radius: 5px;
+    border-color: #2f3e46;
+    margin-left: 4em;
+ }
+
+ .texto {
+    width: 70%;
+ }
+
+ aside {
+    display: block;
+    width: 20%;
+    float: right;
+    text-align: center;
+    background-color: #2f3e46;
+    border: 5px solid;
+    border-radius: 5px;
+    border-color: #84A98C;
+    color: #84A98C;
+ }
+
+ #link-do-video {
+    border: 3px solid;
+    border-radius: 5px;
+    border-color: #84A98C;
+    display: inline-block;
+    margin-bottom: 2em;
+ }
+
+ #link-do-video img {
+    width: 170px;
+ }
+
+ footer {
+    background-color: #84A98C;
+    border-radius: 10px;
+    padding: 10px 2em;
+    color: #2f3e46;
+    margin-bottom: 1em;
+    border-color: #2f3e46;
+    border: 5px solid;
+    margin-top: 2em;
+    text-align: center;
+ }
+
+
