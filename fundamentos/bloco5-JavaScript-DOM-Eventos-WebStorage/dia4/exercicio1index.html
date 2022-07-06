@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="exercicio1style.css">
+  <title>Exemplo WebStorage</title>
+</head>
+<body>
+  <header>
+    <h1>Leitor de Texto</h1>
+    <button style="background-color: inherit; border: 2px solid black; border-radius: 5px; cursor: pointer;" id="configuracao"> <img id="imagem-configuracao" src="https://cdn-icons-png.flaticon.com/512/3524/3524636.png" alt="Configurações"></button>
+  </header>
+  <main>
+    <section id="Inner">
+ 
+        <h1>Lorem Ipsum</h1>
+        <h4>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</h4>
+        <h5>"There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."</h5>
+        
+        <div id="lipsum">
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam elit risus, pharetra in massa non, molestie varius eros. Ut ullamcorper, justo ac lobortis lacinia, lorem erat pharetra nisi, sit amet placerat enim lacus vitae ante. Sed sed ultricies est. Mauris luctus dolor neque. Nullam et mollis nisl. Suspendisse in justo elementum, gravida tellus eu, convallis erat. Aenean at vestibulum libero. Sed ac iaculis odio, et venenatis mi. Nunc ipsum urna, auctor sodales orci at, elementum tincidunt purus. Nullam quis accumsan sem. Vestibulum a nulla sed augue cursus efficitur. Nullam semper auctor eros, at lacinia nisi pretium vel. Sed ut vehicula velit, vitae congue mauris. Sed id facilisis sapien. In varius ligula eget enim condimentum blandit. Praesent dignissim ultricies lorem, in tempus ipsum tempus eget.
+            </p>
+            <p>
+            Etiam ac est non lorem maximus pellentesque. Nulla luctus nec purus pharetra tristique. Proin id purus elementum felis tristique molestie sit amet in orci. Donec ac tristique turpis, eu semper arcu. Duis euismod iaculis nunc, eu porttitor nisi aliquet eu. Vivamus auctor dolor tellus, in volutpat arcu interdum sed. Maecenas nisl libero, tristique tristique mollis sed, elementum id velit. Morbi ex justo, rhoncus vitae rhoncus sed, pellentesque id mauris. Integer ornare lacus vehicula libero dapibus vehicula. Morbi vehicula, nibh eget dignissim efficitur, ligula massa egestas mi, et feugiat est metus vitae lorem. Proin nisi orci, suscipit vel congue mollis, accumsan nec nisi. Proin interdum, ligula sit amet luctus placerat, turpis eros accumsan lectus, quis molestie est magna sit amet nibh. Aliquam in felis vel augue sollicitudin congue. Nullam imperdiet ipsum sit amet accumsan volutpat.
+            </p>
+            <p>
+            Phasellus elementum vulputate fermentum. Praesent at neque vel odio porttitor finibus. Nullam et fringilla neque. Fusce vel fringilla eros, euismod finibus sem. Proin fringilla quam vel urna tincidunt, vitae mollis ex varius. Etiam pellentesque nisi lectus, scelerisque sollicitudin orci condimentum fringilla. Nulla elementum orci nibh, nec porttitor enim imperdiet nec. Sed pharetra semper lectus, malesuada placerat dolor tempor in. Maecenas posuere elit congue ex porta, ac euismod velit tincidunt. Sed tempor id odio quis vestibulum. Integer ac tincidunt turpis. Donec scelerisque nulla turpis, vel cursus erat dignissim vitae. Duis mattis arcu id fermentum imperdiet. Donec tortor sem, fringilla ut nunc id, accumsan sollicitudin quam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+            </p>
+            <p>
+            Ut a efficitur libero. Ut semper dapibus egestas. Nullam condimentum bibendum erat, eget pellentesque ante pharetra id. Ut euismod nisl imperdiet, eleifend risus sit amet, egestas nulla. Duis vulputate leo in risus vestibulum lobortis. Curabitur auctor vel lacus et tempor. Curabitur tempor felis ultrices ex tristique, eget viverra velit mollis. Maecenas bibendum elit orci, ut ultricies nibh faucibus vitae. Donec imperdiet risus eu purus sagittis euismod.
+            </p>
+            <p>
+            Aliquam in neque maximus, dignissim sem quis, facilisis ex. Donec condimentum metus non massa dictum, vitae consectetur nisl cursus. Sed aliquet diam ac finibus bibendum. Vestibulum rutrum leo ac nisl ultrices, vel lobortis arcu tincidunt. Pellentesque vel magna enim. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean quis finibus dolor, at ullamcorper neque. Mauris aliquam maximus ligula sit amet mattis. Cras aliquam libero ipsum, eu varius felis consequat vitae.
+            </p>
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam elit risus, pharetra in massa non, molestie varius eros. Ut ullamcorper, justo ac lobortis lacinia, lorem erat pharetra nisi, sit amet placerat enim lacus vitae ante. Sed sed ultricies est. Mauris luctus dolor neque. Nullam et mollis nisl. Suspendisse in justo elementum, gravida tellus eu, convallis erat. Aenean at vestibulum libero. Sed ac iaculis odio, et venenatis mi. Nunc ipsum urna, auctor sodales orci at, elementum tincidunt purus. Nullam quis accumsan sem. Vestibulum a nulla sed augue cursus efficitur. Nullam semper auctor eros, at lacinia nisi pretium vel. Sed ut vehicula velit, vitae congue mauris. Sed id facilisis sapien. In varius ligula eget enim condimentum blandit. Praesent dignissim ultricies lorem, in tempus ipsum tempus eget.
+            </p>
+            <p>
+            Etiam ac est non lorem maximus pellentesque. Nulla luctus nec purus pharetra tristique. Proin id purus elementum felis tristique molestie sit amet in orci. Donec ac tristique turpis, eu semper arcu. Duis euismod iaculis nunc, eu porttitor nisi aliquet eu. Vivamus auctor dolor tellus, in volutpat arcu interdum sed. Maecenas nisl libero, tristique tristique mollis sed, elementum id velit. Morbi ex justo, rhoncus vitae rhoncus sed, pellentesque id mauris. Integer ornare lacus vehicula libero dapibus vehicula. Morbi vehicula, nibh eget dignissim efficitur, ligula massa egestas mi, et feugiat est metus vitae lorem. Proin nisi orci, suscipit vel congue mollis, accumsan nec nisi. Proin interdum, ligula sit amet luctus placerat, turpis eros accumsan lectus, quis molestie est magna sit amet nibh. Aliquam in felis vel augue sollicitudin congue. Nullam imperdiet ipsum sit amet accumsan volutpat.
+            </p>
+            <p>
+            Phasellus elementum vulputate fermentum. Praesent at neque vel odio porttitor finibus. Nullam et fringilla neque. Fusce vel fringilla eros, euismod finibus sem. Proin fringilla quam vel urna tincidunt, vitae mollis ex varius. Etiam pellentesque nisi lectus, scelerisque sollicitudin orci condimentum fringilla. Nulla elementum orci nibh, nec porttitor enim imperdiet nec. Sed pharetra semper lectus, malesuada placerat dolor tempor in. Maecenas posuere elit congue ex porta, ac euismod velit tincidunt. Sed tempor id odio quis vestibulum. Integer ac tincidunt turpis. Donec scelerisque nulla turpis, vel cursus erat dignissim vitae. Duis mattis arcu id fermentum imperdiet. Donec tortor sem, fringilla ut nunc id, accumsan sollicitudin quam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+            </p>
+            <p>
+            Ut a efficitur libero. Ut semper dapibus egestas. Nullam condimentum bibendum erat, eget pellentesque ante pharetra id. Ut euismod nisl imperdiet, eleifend risus sit amet, egestas nulla. Duis vulputate leo in risus vestibulum lobortis. Curabitur auctor vel lacus et tempor. Curabitur tempor felis ultrices ex tristique, eget viverra velit mollis. Maecenas bibendum elit orci, ut ultricies nibh faucibus vitae. Donec imperdiet risus eu purus sagittis euismod.
+            </p>
+            <p>
+            Aliquam in neque maximus, dignissim sem quis, facilisis ex. Donec condimentum metus non massa dictum, vitae consectetur nisl cursus. Sed aliquet diam ac finibus bibendum. Vestibulum rutrum leo ac nisl ultrices, vel lobortis arcu tincidunt. Pellentesque vel magna enim. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean quis finibus dolor, at ullamcorper neque. Mauris aliquam maximus ligula sit amet mattis. Cras aliquam libero ipsum, eu varius felis consequat vitae.
+            </p>
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam elit risus, pharetra in massa non, molestie varius eros. Ut ullamcorper, justo ac lobortis lacinia, lorem erat pharetra nisi, sit amet placerat enim lacus vitae ante. Sed sed ultricies est. Mauris luctus dolor neque. Nullam et mollis nisl. Suspendisse in justo elementum, gravida tellus eu, convallis erat. Aenean at vestibulum libero. Sed ac iaculis odio, et venenatis mi. Nunc ipsum urna, auctor sodales orci at, elementum tincidunt purus. Nullam quis accumsan sem. Vestibulum a nulla sed augue cursus efficitur. Nullam semper auctor eros, at lacinia nisi pretium vel. Sed ut vehicula velit, vitae congue mauris. Sed id facilisis sapien. In varius ligula eget enim condimentum blandit. Praesent dignissim ultricies lorem, in tempus ipsum tempus eget.
+            </p>
+            <p>
+            Etiam ac est non lorem maximus pellentesque. Nulla luctus nec purus pharetra tristique. Proin id purus elementum felis tristique molestie sit amet in orci. Donec ac tristique turpis, eu semper arcu. Duis euismod iaculis nunc, eu porttitor nisi aliquet eu. Vivamus auctor dolor tellus, in volutpat arcu interdum sed. Maecenas nisl libero, tristique tristique mollis sed, elementum id velit. Morbi ex justo, rhoncus vitae rhoncus sed, pellentesque id mauris. Integer ornare lacus vehicula libero dapibus vehicula. Morbi vehicula, nibh eget dignissim efficitur, ligula massa egestas mi, et feugiat est metus vitae lorem. Proin nisi orci, suscipit vel congue mollis, accumsan nec nisi. Proin interdum, ligula sit amet luctus placerat, turpis eros accumsan lectus, quis molestie est magna sit amet nibh. Aliquam in felis vel augue sollicitudin congue. Nullam imperdiet ipsum sit amet accumsan volutpat.
+            </p>
+            <p>
+            Phasellus elementum vulputate fermentum. Praesent at neque vel odio porttitor finibus. Nullam et fringilla neque. Fusce vel fringilla eros, euismod finibus sem. Proin fringilla quam vel urna tincidunt, vitae mollis ex varius. Etiam pellentesque nisi lectus, scelerisque sollicitudin orci condimentum fringilla. Nulla elementum orci nibh, nec porttitor enim imperdiet nec. Sed pharetra semper lectus, malesuada placerat dolor tempor in. Maecenas posuere elit congue ex porta, ac euismod velit tincidunt. Sed tempor id odio quis vestibulum. Integer ac tincidunt turpis. Donec scelerisque nulla turpis, vel cursus erat dignissim vitae. Duis mattis arcu id fermentum imperdiet. Donec tortor sem, fringilla ut nunc id, accumsan sollicitudin quam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+            </p>
+            <p>
+            Ut a efficitur libero. Ut semper dapibus egestas. Nullam condimentum bibendum erat, eget pellentesque ante pharetra id. Ut euismod nisl imperdiet, eleifend risus sit amet, egestas nulla. Duis vulputate leo in risus vestibulum lobortis. Curabitur auctor vel lacus et tempor. Curabitur tempor felis ultrices ex tristique, eget viverra velit mollis. Maecenas bibendum elit orci, ut ultricies nibh faucibus vitae. Donec imperdiet risus eu purus sagittis euismod.
+            </p>
+            <p>
+            Aliquam in neque maximus, dignissim sem quis, facilisis ex. Donec condimentum metus non massa dictum, vitae consectetur nisl cursus. Sed aliquet diam ac finibus bibendum. Vestibulum rutrum leo ac nisl ultrices, vel lobortis arcu tincidunt. Pellentesque vel magna enim. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean quis finibus dolor, at ullamcorper neque. Mauris aliquam maximus ligula sit amet mattis. Cras aliquam libero ipsum, eu varius felis consequat vitae.
+            </p>
+        </div>
+    
+    </section>
+
+  </main>
+
+  <aside id="aba-configuracao" style="display: none;">
+
+    <section id="cor-fundo-tela" class="secao-configuracao">
+        <h1>Cor de Fundo da Tela</h1>
+        <p>Insira abaixo o código RGB da cor que deseja por no fundo da tela, e clique "Enter".</p>
+        <input style="border: 2px solid black; background-color: inherit;" type="text" id="seleciona-cor-fundo" placeholder="Exemplo: rgb(155, 155, 155)">
+    </section>
+
+    <section id="cor-do-texto" class="secao-configuracao">
+        <h1>Cor do Texto</h1>
+        <p>Insira abaixo o código RGB da cor que deseja por na fonte, e clique "Enter".</p>
+        <input style="border: 2px solid black; background-color: inherit;" type="text" id="seleciona-cor-fonte" placeholder="Exemplo: rgb(155, 155, 155)">
+    </section>
+
+    <section id="tamanho-da-fonte" class="secao-configuracao">
+        <h1>Tamanho da Fonte</h1>
+        <div class="button-box">
+            <button style="font-weight: bolder;color: inherit; background-color: inherit; border: 2px solid black; border-radius: 5px; cursor: pointer;" id="botao-fonte">
+                -
+            </button>
+            <button style="font-weight: bolder;color: inherit;background-color: inherit; border: 2px solid black; border-radius: 5px; cursor: pointer;" id="botao+fonte">
+                +
+            </button>
+        </div>
+    </section>
+
+    <section id="espaçamento-entre-linhas" class="secao-configuracao">
+        <h1>Espaçamento das Linhas</h1>
+        <div class="button-box">
+            <button style="font-weight: bolder;color: inherit; background-color: inherit; border: 2px solid black; border-radius: 5px; cursor: pointer;" id="botao-linha">
+                -
+            </button>
+            <button style="font-weight: bolder;color: inherit;background-color: inherit; border: 2px solid black; border-radius: 5px; cursor: pointer;" id="botao+linha">
+                +
+            </button>
+        </div>
+    </section>
+
+    <section id="tipo-da-fonte" class="secao-configuracao">
+        <h1>Tipo da Fonte</h1>
+        <div id="caixa-opcoes-fonte" class="button-box">
+            <button style="font-weight: bolder;color: inherit; background-color: inherit; border: 2px solid black; border-radius: 5px; cursor: pointer;" id="botao-opcao1">Opção 1 <div class="type-font">sans-serif</div></button>
+            <button style="font-weight: bolder;color: inherit; background-color: inherit; border: 2px solid black; border-radius: 5px; cursor: pointer;" id="botao-opcao2">Opção 2 <div class="type-font">system-ui</div></button>
+            <button style="font-weight: bolder;color: inherit; background-color: inherit; border: 2px solid black; border-radius: 5px; cursor: pointer;" id="botao-opcao3">Opção 3 <div class="type-font">monospace</div></button>
+        </div>
+    </section>
+
+  </aside>
+
+  <script src="exercicio1.js"></script>
+</body>
+</html>

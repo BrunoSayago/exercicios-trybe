@@ -1,0 +1,62 @@
+main {
+    text-align: center;
+    max-width: 70%;
+    margin: auto;
+}
+
+header {
+    text-align: center;
+}
+
+#configuracao {
+    position: fixed;
+    height: max-content;
+    width: max-content;
+    right: 0;
+    top: 0;
+    margin: 5px;
+}
+
+#imagem-configuracao {
+    height: 30px;
+    width: 30px;
+}
+
+#aba-configuracao {
+    position: fixed;
+    margin: 5px;
+    top: 0;
+    right: 0;
+    margin-right: 60px;
+    max-width: 30%;
+    border: 2px solid black;
+    border-radius: 5px;
+    text-align: center;
+    background-color: inherit;
+    max-height: 95%;
+    overflow-y: auto;
+}
+
+.secao-configuracao {
+    padding: 2px 5px;
+    margin: 10px 0px;
+}
+
+.secao-configuracao p {
+    padding: 0;
+    margin: 3px 0;
+}
+
+.secao-configuracao h1 {
+    padding: 0;
+    margin: 3px 0;
+}
+
+#caixa-opcoes-font button {
+    display: inline-block;
+    width: 50%;
+}
+
+.type-font {
+    display: none;
+}
