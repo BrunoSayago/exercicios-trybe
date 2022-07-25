@@ -63,20 +63,19 @@ const books = [
   
   // Adicione o código do exercício aqui:
 
-//   1 - Crie um array com strings no formato NOME_DO_LIVRO - GÊNERO_DO_LIVRO - NOME_DA_PESSOA_AUTORA
+// 5 - Crie um array em ordem alfabética apenas com os nomes de todas as pessoas autoras de ficção científica ou fantasia.
 
 const expectedResult = [
-    'As Crônicas de Gelo e Fogo - Fantasia - George R. R. Martin',
-    'O Senhor dos Anéis - Fantasia - J. R. R. Tolkien',
-    'Fundação - Ficção Científica - Isaac Asimov',
-    'Duna - Ficção Científica - Frank Herbert',
-    'A Coisa - Terror - Stephen King',
-    'O Chamado de Cthulhu - Terror - H. P. Lovecraft',
-  ];
-  
-  function formatedBookNames() {
-    const arrayStrings = books.map((elemento) => `${elemento.name} - ${elemento.genre} - ${elemento.author.name}`);
-    return arrayStrings
-  }
+  'Frank Herbert',
+  'George R. R. Martin',
+  'Isaac Asimov',
+  'J. R. R. Tolkien',
+];
 
-  console.log(formatedBookNames());
+function fantasyOrScienceFictionAuthors() {
+  const filtraGenero = books.filter((elemento) => elemento.genre === 'Ficção Científica' || elemento.genre === 'Fantasia');
+  const arrayNomes = filtraGenero.map((elemento) => elemento.author.name);
+  return arrayNomes.sort();
+}
+
+console.log(fantasyOrScienceFictionAuthors());

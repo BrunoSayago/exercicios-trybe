@@ -63,20 +63,18 @@ const books = [
   
   // Adicione o código do exercício aqui:
 
-//   1 - Crie um array com strings no formato NOME_DO_LIVRO - GÊNERO_DO_LIVRO - NOME_DA_PESSOA_AUTORA
+//  6 - Crie um array com o nome de todos os livros com mais de 60 anos de publicação.
 
 const expectedResult = [
-    'As Crônicas de Gelo e Fogo - Fantasia - George R. R. Martin',
-    'O Senhor dos Anéis - Fantasia - J. R. R. Tolkien',
-    'Fundação - Ficção Científica - Isaac Asimov',
-    'Duna - Ficção Científica - Frank Herbert',
-    'A Coisa - Terror - Stephen King',
-    'O Chamado de Cthulhu - Terror - H. P. Lovecraft',
-  ];
-  
-  function formatedBookNames() {
-    const arrayStrings = books.map((elemento) => `${elemento.name} - ${elemento.genre} - ${elemento.author.name}`);
-    return arrayStrings
-  }
+  'O Senhor dos Anéis',
+  'Fundação',
+  'O Chamado de Cthulhu',
+];
 
-  console.log(formatedBookNames());
+function oldBooks() {
+  const filtraIdade = books.filter((elemento) => elemento.releaseYear < (2022 - 60));
+  const nomesLivros = filtraIdade.map((elemento) => elemento.name);
+  return nomesLivros;
+}
+
+console.log(oldBooks());
